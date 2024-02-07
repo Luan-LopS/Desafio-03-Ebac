@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Lista de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+        <header>
+            <h1>Add contatos</h1>
+            <span class="material-symbols-outlined">
+                check
+                </span>
+        </header>
+        <form>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="number" id="fone" placeholder="Telefone">
+            <button type="submit">Add +</button>
+        </form>
+    </div>
+        <table cellspacing = "0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Luan</td>
+                    <td>41-9999-9999</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Total de contatos
+                    </td>
+                    <td>
+                        102
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
