@@ -18,8 +18,8 @@ function addLinha(){
 
     if(contatoNome.includes(nome.value)){
         alert('ja tem')
-    }else if(fone.length <= 9){
-        Alert('Coloque o telefone Valido')
+    }else if(fone.value.length >  9){
+        alert('Coloque o telefone Valido')
 
     }else{
         contatoNome.push(nome.value)
