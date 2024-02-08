@@ -30,11 +30,12 @@ header{
 form input{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
+    letter-spacing: 0.6px;
 }
 
 .container{
     margin: 100px auto;
-    height: 50vh;
+    min-height: 50vh;
     max-width: 600px;
     background-color: #17679E;
     border-radius: 10px;
