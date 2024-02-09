@@ -12,16 +12,25 @@ form.addEventListener('submit',function(e){
     criaTabela()
 })
 
+
 function addLinha(){
     const nome = document.getElementById('nome')
     const fone = document.getElementById('fone')
 
-    if(contatoNome.includes(nome.value)){
+    //Verifica se ja existe um nome de contato cadastrado e input esta valido
+    if(contatoNome.includes(nome.value) || nome.value === null){
         alert('ja tem')
-    }else if(fone.value.length >  9){
+
+    // Verifica se o telefone tem o tamanho correto    
+    }else if(fone.length > 9 || fone.length < 8){
         alert('Coloque o telefone Valido')
 
-    }else{
+    // Verificar se o numero de contato ja existe
+    }else if(numeroContato.includes(fone.value)){
+        alert('Numero ja add')
+
+    // add as linhas     
+    } else{
         contatoNome.push(nome.value)
 
         let linha = `<tr> `
@@ -35,7 +44,6 @@ function addLinha(){
     nome.value = ''
     fone.value = ''
 }
-
 
 
 function criaTabela(){
