@@ -11,7 +11,6 @@ form.addEventListener('submit',function(e){
 
     Verificar()
     criaTabela()
-    totalContato()
 })
 
 
@@ -29,7 +28,7 @@ function Verificar(){
 
 
     // Verifica se o telefone tem o tamanho correto    
-    }else if(fone.value.length !== 9){
+    }else if(fone.value.length !== 8){
         fone.classList.add('inputInvalido')
         p.innerHTML = foneInvalido
 
@@ -46,11 +45,14 @@ function Verificar(){
         contatoNome.push(nome.value)
 
         criaLinha()
+        totalContato()
+        fone.classList.remove('inputInvalido')
+        nome.classList.remove ('inputInvalido')
+        nome.value = ''
+        fone.value = ''
+        p.innerHTML = ''
     }
-    nome.value = ''
-    fone.value = ''
-    fone.classList.remove('inputInvalido')
-    nome.classList.remove ('inputInvalido')
+
 }
 
 function criaLinha(){
